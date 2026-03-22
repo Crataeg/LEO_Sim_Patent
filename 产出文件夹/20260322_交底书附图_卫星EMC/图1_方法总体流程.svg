@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .title { font: 700 34px 'Microsoft YaHei', 'SimSun', sans-serif; fill: #1f2937; }
+      .label { font: 600 24px 'Microsoft YaHei', 'SimSun', sans-serif; fill: #111827; }
+      .text { font: 20px 'Microsoft YaHei', 'SimSun', sans-serif; fill: #374151; }
+      .small { font: 18px 'Microsoft YaHei', 'SimSun', sans-serif; fill: #4b5563; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f7fafc"/>
+  <text x="800" y="60" text-anchor="middle" class="title">图1 方法总体流程图</text>
+
+  <rect x="70" y="130" width="230" height="120" rx="20" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+  <text x="185" y="178" text-anchor="middle" class="label">S1 场景构建</text>
+  <text x="185" y="212" text-anchor="middle" class="text">星座、用户终端、</text>
+  <text x="185" y="238" text-anchor="middle" class="text">网关、干扰卫星</text>
+
+  <rect x="360" y="130" width="230" height="120" rx="20" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+  <text x="475" y="178" text-anchor="middle" class="label">S2 几何预计算</text>
+  <text x="475" y="212" text-anchor="middle" class="text">方位角、仰角、距离、</text>
+  <text x="475" y="238" text-anchor="middle" class="text">可见性、径向速度</text>
+
+  <rect x="650" y="130" width="230" height="120" rx="20" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+  <text x="765" y="178" text-anchor="middle" class="label">S3 双链路功率建模</text>
+  <text x="765" y="212" text-anchor="middle" class="text">信号、CCI、噪声、</text>
+  <text x="765" y="238" text-anchor="middle" class="text">外部干扰</text>
+
+  <rect x="940" y="130" width="230" height="120" rx="20" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+  <text x="1055" y="178" text-anchor="middle" class="label">S4 基线仿真</text>
+  <text x="1055" y="212" text-anchor="middle" class="text">上下行统一求解</text>
+  <text x="1055" y="238" text-anchor="middle" class="text">得到基线指标</text>
+
+  <rect x="1230" y="130" width="300" height="120" rx="20" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+  <text x="1380" y="178" text-anchor="middle" class="label">S5 最坏工况生成</text>
+  <text x="1380" y="212" text-anchor="middle" class="text">InfoGAN 生成干扰包络</text>
+  <text x="1380" y="238" text-anchor="middle" class="text">GA 搜索最坏场景</text>
+
+  <line x1="300" y1="190" x2="360" y2="190" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="590" y1="190" x2="650" y2="190" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="880" y1="190" x2="940" y2="190" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1170" y1="190" x2="1230" y2="190" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="120" y="380" width="290" height="140" rx="20" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+  <text x="265" y="430" text-anchor="middle" class="label">S6 双链路协同评估</text>
+  <text x="265" y="465" text-anchor="middle" class="text">THR、BER、BLER、DOP、</text>
+  <text x="265" y="492" text-anchor="middle" class="text">时延、事件标签</text>
+
+  <rect x="500" y="380" width="290" height="140" rx="20" fill="#ffffff" stroke="#16a34a" stroke-width="3"/>
+  <text x="645" y="430" text-anchor="middle" class="label">S7 端到端评价</text>
+  <text x="645" y="465" text-anchor="middle" class="text">THR_E2E = min(DL, UL)</text>
+  <text x="645" y="492" text-anchor="middle" class="text">BLER_E2E = max(DL, UL)</text>
+
+  <rect x="880" y="380" width="290" height="140" rx="20" fill="#ffffff" stroke="#d97706" stroke-width="3"/>
+  <text x="1025" y="430" text-anchor="middle" class="label">S8 干扰识别</text>
+  <text x="1025" y="465" text-anchor="middle" class="text">功率对齐 IQ</text>
+  <text x="1025" y="492" text-anchor="middle" class="text">STFT + LeNet 分类</text>
+
+  <rect x="1260" y="380" width="220" height="140" rx="20" fill="#ffffff" stroke="#7c3aed" stroke-width="3"/>
+  <text x="1370" y="430" text-anchor="middle" class="label">S9 结果输出</text>
+  <text x="1370" y="465" text-anchor="middle" class="text">摘要文本</text>
+  <text x="1370" y="492" text-anchor="middle" class="text">附图与关键帧</text>
+
+  <line x1="1380" y1="250" x2="1380" y2="320" stroke="#475569" stroke-width="4"/>
+  <line x1="1380" y1="320" x2="265" y2="320" stroke="#475569" stroke-width="4"/>
+  <line x1="265" y1="320" x2="265" y2="380" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="410" y1="450" x2="500" y2="450" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="790" y1="450" x2="880" y2="450" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1170" y1="450" x2="1260" y2="450" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="120" y="610" width="560" height="180" rx="24" fill="#eff6ff" stroke="#3b82f6" stroke-width="3"/>
+  <text x="400" y="655" text-anchor="middle" class="label">输入参数</text>
+  <text x="160" y="700" class="text">1. 星座参数：轨道高度、倾角、轨道面数、每轨卫星数、相位参数</text>
+  <text x="160" y="732" class="text">2. 终端参数：用户位置、网关位置、上下行频率、带宽、门限</text>
+  <text x="160" y="764" class="text">3. EMC 参数：干扰卫星数、方向图、抗干扰延迟、零陷深度</text>
+
+  <rect x="860" y="610" width="620" height="180" rx="24" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="1170" y="655" text-anchor="middle" class="label">输出结果</text>
+  <text x="900" y="700" class="text">1. 上行、下行、端到端平均吞吐量与中断率</text>
+  <text x="900" y="732" class="text">2. Normal / Jamming / Protected / CoChannel 事件标签</text>
+  <text x="900" y="764" class="text">3. STFT 样例图、混淆矩阵、关键帧时频图与摘要文本</text>
+
+  <text x="800" y="845" text-anchor="middle" class="small">说明：该流程将低轨时变几何、双链路评估、最坏工况生成和干扰识别纳入同一实验室评估闭环。</text>
+</svg>

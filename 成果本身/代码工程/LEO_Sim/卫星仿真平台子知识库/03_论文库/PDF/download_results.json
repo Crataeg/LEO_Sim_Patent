@@ -1,0 +1,62 @@
+﻿[
+    {
+        "File":  "01_A_Survey_on_Non_Geostationary_Satellite_Systems_The_Communication_Perspective.pdf",
+        "Status":  "OK",
+        "Bytes":  1076253,
+        "Url":  "https://arxiv.org/pdf/2107.05312.pdf"
+    },
+    {
+        "File":  "02_LEO_Satellite_Access_Network_Towards_6G_The_Road_to_Space_Coverage.pdf",
+        "Status":  "OK",
+        "Bytes":  3973840,
+        "Url":  "https://arxiv.org/pdf/2207.11896.pdf"
+    },
+    {
+        "File":  "03_Emerging_NGSO_Constellations_Spectral_Coexistence_with_GSO_Systems.pdf",
+        "Status":  "OK",
+        "Bytes":  3886546,
+        "Url":  "https://arxiv.org/pdf/2404.12651.pdf"
+    },
+    {
+        "File":  "04_Evaluating_S_Band_Interference_Impact_of_Satellite_Systems_on_Terrestrial_Networks.pdf",
+        "Status":  "OK",
+        "Bytes":  1630110,
+        "Url":  "https://arxiv.org/pdf/2501.05462.pdf"
+    },
+    {
+        "File":  "05_Null_Shaping_for_Interference_Mitigation_in_LEO_Satellites.pdf",
+        "Status":  "OK",
+        "Bytes":  1643599,
+        "Url":  "https://arxiv.org/pdf/2510.00816.pdf"
+    },
+    {
+        "File":  "06_InfoGAN_Interpretable_Representation_Learning_by_Information_Maximizing_GANs.pdf",
+        "Status":  "OK",
+        "Bytes":  3597069,
+        "Url":  "https://arxiv.org/pdf/1606.03657.pdf"
+    },
+    {
+        "File":  "07_Gradient_Based_Learning_Applied_to_Document_Recognition_LeNet.pdf",
+        "Status":  "OK",
+        "Bytes":  955058,
+        "Url":  "http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf"
+    },
+    {
+        "File":  "08_Hierarchical_Classification_Method_for_RFI_Recognition_and_Characterization_in_Satcom.pdf",
+        "Status":  "OK",
+        "Bytes":  4310668,
+        "Url":  "https://espace2.etsmtl.ca/id/eprint/21545/1/Landry-R-2020-21545.pdf"
+    },
+    {
+        "File":  "09_RF_Based_Low_SNR_Classification_of_UAVs_Using_CNNs.pdf",
+        "Status":  "OK",
+        "Bytes":  3228326,
+        "Url":  "https://arxiv.org/pdf/2009.05519.pdf"
+    },
+    {
+        "File":  "10_Modulation_Classification_Through_Deep_Learning_Using_Resolution_Transformed_Spectrograms.pdf",
+        "Status":  "OK",
+        "Bytes":  1085821,
+        "Url":  "https://arxiv.org/pdf/2306.04655.pdf"
+    }
+]

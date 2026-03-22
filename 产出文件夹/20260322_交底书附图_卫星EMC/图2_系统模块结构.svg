@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+  <defs>
+    <style>
+      .title { font: 700 34px 'Microsoft YaHei', 'SimSun', sans-serif; fill: #1f2937; }
+      .h1 { font: 700 26px 'Microsoft YaHei', 'SimSun', sans-serif; fill: #111827; }
+      .t { font: 20px 'Microsoft YaHei', 'SimSun', sans-serif; fill: #374151; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="980" fill="#fafafa"/>
+  <text x="800" y="60" text-anchor="middle" class="title">图2 系统模块结构图</text>
+
+  <rect x="70" y="110" width="220" height="760" rx="26" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+  <text x="180" y="160" text-anchor="middle" class="h1">输入配置层</text>
+  <text x="100" y="220" class="t">• 星座参数</text>
+  <text x="100" y="260" class="t">• 用户终端位置</text>
+  <text x="100" y="300" class="t">• 网关位置</text>
+  <text x="100" y="340" class="t">• 上行频率</text>
+  <text x="100" y="380" class="t">• 下行频率</text>
+  <text x="100" y="420" class="t">• 复用系数</text>
+  <text x="100" y="460" class="t">• 干扰卫星参数</text>
+  <text x="100" y="500" class="t">• 抗干扰延迟</text>
+  <text x="100" y="540" class="t">• 零陷深度</text>
+  <text x="100" y="580" class="t">• 吞吐量门限</text>
+  <text x="100" y="620" class="t">• 端口/天线换算接口</text>
+
+  <rect x="380" y="110" width="360" height="180" rx="24" fill="#ecfccb" stroke="#65a30d" stroke-width="3"/>
+  <text x="560" y="155" text-anchor="middle" class="h1">场景与几何引擎</text>
+  <text x="420" y="205" class="t">• satelliteScenario 场景构建</text>
+  <text x="420" y="242" class="t">• 方位角 / 仰角 / 距离 / 可见性</text>
+  <text x="420" y="279" class="t">• 径向速度 / 多普勒变化率</text>
+
+  <rect x="380" y="340" width="360" height="220" rx="24" fill="#fef9c3" stroke="#ca8a04" stroke-width="3"/>
+  <text x="560" y="385" text-anchor="middle" class="h1">双链路功率建模引擎</text>
+  <text x="420" y="435" class="t">• 下行服务信号功率</text>
+  <text x="420" y="472" class="t">• 上行服务信号功率</text>
+  <text x="420" y="509" class="t">• 共信道干扰功率</text>
+  <text x="420" y="546" class="t">• 外部干扰功率与噪声功率</text>
+
+  <rect x="380" y="610" width="360" height="260" rx="24" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+  <text x="560" y="655" text-anchor="middle" class="h1">最坏工况生成与求解层</text>
+  <text x="420" y="705" class="t">• InfoGAN 生成干扰包络</text>
+  <text x="420" y="742" class="t">• GA 搜索 z、c 与尺度因子</text>
+  <text x="420" y="779" class="t">• 模拟 Normal / Jamming / Protected</text>
+  <text x="420" y="816" class="t">• 形成基线与最坏工况结果</text>
+
+  <rect x="860" y="180" width="330" height="260" rx="24" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+  <text x="1025" y="225" text-anchor="middle" class="h1">双链路协同评估层</text>
+  <text x="900" y="275" class="t">• 上行链路指标</text>
+  <text x="900" y="312" class="t">• 下行链路指标</text>
+  <text x="900" y="349" class="t">• 端到端吞吐量与误块率</text>
+  <text x="900" y="386" class="t">• 路由跳数与传播时延</text>
+
+  <rect x="860" y="510" width="330" height="220" rx="24" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+  <text x="1025" y="555" text-anchor="middle" class="h1">干扰识别层</text>
+  <text x="900" y="605" class="t">• 功率对齐 IQ 快照</text>
+  <text x="900" y="642" class="t">• STFT 图像生成</text>
+  <text x="900" y="679" class="t">• LeNet 分类输出</text>
+
+  <rect x="1290" y="180" width="240" height="550" rx="24" fill="#fff7ed" stroke="#ea580c" stroke-width="3"/>
+  <text x="1410" y="225" text-anchor="middle" class="h1">输出层</text>
+  <text x="1320" y="285" class="t">• 摘要文本</text>
+  <text x="1320" y="330" class="t">• 配置文件</text>
+  <text x="1320" y="375" class="t">• 结果文件</text>
+  <text x="1320" y="420" class="t">• 训练集拼图</text>
+  <text x="1320" y="465" class="t">• 混淆矩阵</text>
+  <text x="1320" y="510" class="t">• 关键帧时频图</text>
+  <text x="1320" y="555" class="t">• 合规性判定</text>
+  <text x="1320" y="600" class="t">• 专利附图素材</text>
+
+  <line x1="290" y1="250" x2="380" y2="200" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="290" y1="460" x2="380" y2="450" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="290" y1="670" x2="380" y2="740" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <line x1="740" y1="200" x2="860" y2="260" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="740" y1="450" x2="860" y2="320" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="740" y1="740" x2="860" y2="620" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <line x1="1190" y1="300" x2="1290" y2="300" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1190" y1="620" x2="1290" y2="500" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <text x="800" y="930" text-anchor="middle" class="t">说明：系统从输入配置开始，依次经过场景引擎、功率建模、最坏工况生成、双链路评估和干扰识别，最终输出实验室评估结果与可编辑附图素材。</text>
+</svg>

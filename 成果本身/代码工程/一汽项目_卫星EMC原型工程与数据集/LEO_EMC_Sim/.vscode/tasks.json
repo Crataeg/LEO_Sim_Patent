@@ -1,0 +1,58 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "MATLAB: Build LEO_EMC_Sim",
+      "type": "shell",
+      "command": "matlab",
+      "args": [
+        "-batch",
+        "addpath(pwd); build_LEO_EMC_Sim;"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "group": "build"
+    },
+    {
+      "label": "MATLAB: Run LEO_EMC_Sim",
+      "type": "shell",
+      "command": "matlab",
+      "args": [
+        "-batch",
+        "addpath(pwd); run_LEO_EMC_Sim;"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "MATLAB: Build + Run LEO_EMC_Sim",
+      "type": "shell",
+      "command": "matlab",
+      "args": [
+        "-batch",
+        "addpath(pwd); build_LEO_EMC_Sim; run_LEO_EMC_Sim;"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "group": "test"
+    }
+  ]
+}

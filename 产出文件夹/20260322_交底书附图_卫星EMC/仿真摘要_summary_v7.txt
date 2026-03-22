@@ -1,0 +1,28 @@
+LEO StarNet EMC V7 Engineering Summary
+Generated: 09-Mar-2026 21:01:47
+
+[Startup]
+Mode = default
+Epoch = 2026-01-23
+SampleTime = 10.00 s
+
+[Key Frequencies]
+Downlink Fc = 1.500 GHz
+Uplink   Fc = 1.600 GHz
+
+[Baseline vs Worst]
+DL Base  : meanThr = 78.97 Mbps, outage = 0.00 %
+DL Worst : meanThr = 75.97 Mbps, outage = 4.42 %
+UL Base  : meanThr = 75.69 Mbps, outage = 0.00 %
+UL Worst : meanThr = 52.62 Mbps, outage = 20.73 %
+E2E Base : meanThr = 73.99 Mbps, outage = 0.00 %
+E2E Worst: meanThr = 50.57 Mbps, outage = 21.65 %
+
+[Requirements]
+Min SINR            = 1.00 dB
+Min Throughput      = 20.00 Mbps
+Rx Sensitivity      = -120.00 dBm
+Max Doppler Rate    = 300.00 Hz/s
+Ku EIRP Current/Min = 1.20 / 1.00 dBw
+Ku G/T Current/Min  = -27.00 / -27.50 dB/K
+JA3700 Level Cur/Tgt= 5 / 5
